@@ -1,13 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 browser = webdriver.Chrome()
-browser.get("http://www.python.org")
-elem = browser.find_element_by_id("id-search-field")
-elem.send_keys('1')
+browser.get("https://www.instagram.com/?hl=pt-br")
+elem = browser.find_element_by_name("username")
 
+elem.send_keys("llh")
 
-elem.send_keys(Keys.ENTER)
 elem.submit()
 
-browser.close()
+
 
