@@ -1,10 +1,12 @@
+import getpass
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 
-username = "lk"
-senha= "9"
+username = input("fala ai teu nome ")
+senha = getpass.getpass()
+
 browser = webdriver.Chrome()
 browser.get("https://www.instagram.com/?hl=pt-br")
 
